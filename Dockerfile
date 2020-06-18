@@ -52,6 +52,8 @@ RUN add-apt-repository -y ppa:ondrej/php && apt-get update
 
 RUN git clone https://github.com/Leocodefocus/shockpot.git /opt/shockpot
 
+COPY shockpot.conf /opt/shockpot/shockpot.conf
+
 RUN cd /opt/shockpot && pip install -r requirements.txt
 
 EXPOSE 8080
