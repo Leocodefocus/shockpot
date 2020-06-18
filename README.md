@@ -37,7 +37,10 @@ channel = shockpot.events
 ## Running
 
 ```
-python shockpot.py
+运行方式一：python shockpot.py  
+运行方式二：
+docker build --rm --tag shockpot .  
+docker run --detach --publish 8080:8080 shockpot
 ```
 
 ## Deployment
