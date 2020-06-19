@@ -46,9 +46,9 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 #RUN locale-gen en_US.UTF-8
-RUN export LANG=en_US.UTF-8
-RUN LC_ALL=en_US.UTF-8
-RUN add-apt-repository -y ppa:ondrej/php && apt-get update
+#RUN export LANG=en_US.UTF-8
+#RUN LC_ALL=en_US.UTF-8
+#RUN add-apt-repository -y ppa:ondrej/php && apt-get update
 
 RUN git clone https://github.com/Leocodefocus/shockpot.git /opt/shockpot
 
