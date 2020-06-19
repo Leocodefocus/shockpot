@@ -56,10 +56,10 @@ COPY shockpot.conf /opt/shockpot/shockpot.conf
 
 RUN cd /opt/shockpot && pip install -r requirements.txt
 
-RUN chmod +x start.sh
+#RUN chmod +x start.sh
 
 EXPOSE 8080
 WORKDIR /opt/shockpot
-CMD ["./start.sh"]
+CMD ["/bin/bash","./start.sh"]
 
 
